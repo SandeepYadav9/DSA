@@ -1,8 +1,10 @@
 # DSA
-Sorting(
+Sorting
 1. Bubble , 
 2. Selection, 
-3. Inserson)
+3. Inserson
+
+
 Resurcion 
 1.String Reverse,
 2. Fabonice Number,
