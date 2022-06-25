@@ -13,7 +13,7 @@ function printNumber(n) {
 }
 
 printNumber(5);
-
+=============================
 // Q2. Print numbers from 1 to 5.
 
 function printNumber(n) {
@@ -24,7 +24,7 @@ function printNumber(n) {
   return printNumber(n + 1);
 }
 printNumber(1);
-
+================================
 // Q3. Print the sum of fIndexrst n natural numbers.
 
 /*
@@ -47,7 +47,7 @@ function sumOfNaturalNumber(sum, fIndex, n) {
 }
 
 sumOfNaturalNumber(0, 1, 5);
-
+==========================================
 // Q4. Print a string in reverse.
 /*
 information 
@@ -66,7 +66,7 @@ function revString(str, index) {
 }
 let str = "Sandeep";
 revString(str, str.length);
-
+===========================
 // Q5. Print the fibonacci sequence till nth term.
 
 /*
@@ -88,7 +88,7 @@ console.log(1);
 fibonacci(0, 1, 9);
 
 
-
+==========================================
 // Q6. Print factorial of a number n.
 /*
 infor=n
