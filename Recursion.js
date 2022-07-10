@@ -104,3 +104,30 @@ function factorial(n) {
   
   console.log(factorial(5));
   
+
+
+=======================================================
+  
+  
+  6. Prints x^n (STACK HIGHT n);
+/*
+x, n 
+x=2
+n=5
+
+*/
+
+function calcuPower(x, n) {
+  if (x == 0) {
+    return 0;
+  }
+  if (n == 0) {
+    return 1;
+  }
+
+  return x * calcuPower(x, n - 1);
+}
+
+let x = 2;
+let n = 5;
+console.log(calcuPower(2, 5));
