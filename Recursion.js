@@ -166,3 +166,25 @@ function elementOccers(str, index, element) {
 
 let str = "abaacdaefaah";
 elementOccers(str, 0, "a");
+
+
+===========================================
+  
+  
+  // Check an array is sorted (Strictly incrising order)
+
+function sortedAarr(arr, index) {
+  if (index == arr.length - 1) {
+    return true;
+  }
+
+  if (arr[index] < arr[index + 1]) {
+    return sortedAarr(arr, index + 1);
+  } else {
+    return false;
+  }
+}
+
+let arr = [1, 2, 3, 4, 5];
+sortedAarr(arr, 0);
+console.log(sortedAarr(arr, 0));
