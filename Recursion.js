@@ -131,3 +131,38 @@ function calcuPower(x, n) {
 let x = 2;
 let n = 5;
 console.log(calcuPower(2, 5));
+
+
+
+=======================================================
+  
+  // Find the first and lost occerance of an elements in strings
+
+  /*
+info
+Given= info, index, element
+find= first index, lost index
+*/
+let first = -1;
+let lost = -1;
+function elementOccers(str, index, element) {
+  if (index == str.length - 1) {
+    console.log(first);
+    console.log(lost);
+    return;
+  }
+
+  let currentChar = str.charAt(index);
+  if (currentChar == element) {
+    if (first == -1) {
+      first = index;
+    } else {
+      lost = index;
+    }
+  }
+
+  return elementOccers(str, index + 1, element);
+}
+
+let str = "abaacdaefaah";
+elementOccers(str, 0, "a");
