@@ -188,3 +188,35 @@ function sortedAarr(arr, index) {
 let arr = [1, 2, 3, 4, 5];
 sortedAarr(arr, 0);
 console.log(sortedAarr(arr, 0));
+
+
+
+
+=======================================================
+  
+   // Move  all 'X to the end of the Strings
+/*
+check information
+logic, condition how to achive
+complete condition 
+*/
+function moveAll(str, i, c, newStr) {
+  if (i == str.length) {
+    for (let i = 0; i < c; i++) {
+      console.log("x");
+    }
+    console.log(newStr);
+    return;
+  }
+
+  let currentChar = str.charAt(i);
+  if (currentChar == "x") {
+    c++;
+    moveAll(str, i + 1, c, newStr);
+  } else {
+    newStr += currentChar;
+    moveAll(str, i + 1, c, newStr);
+  }
+}
+let str = "axbcxxd";
+moveAll(str, 0, 0, "");
